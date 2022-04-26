@@ -9,11 +9,15 @@ describe('Test suit for ExplorerService', () => {
         expect(noders[0].mission).toBe('node');
     });
     test('2) Amount of explorers by mission', () => {
-        // Aplicación del ExplorerService sobre la lista de explorers
-        // ExplorerService.getExplorersUsernamesByMission(explorers, "node");
         const explorers = Reader.readJsonFile('explorers.json')
         const noders = ExplorerService.getAmountOfExplorersByMission(explorers, 'node')
 
         expect(noders).toBe(10)
+    });
+    test('3) Usernames by mission', () => {
+        const explorers = Reader.readJsonFile('explorers.json')
+        const nodersUsernames = ExplorerService.getExplorersUsernamesByMission(explorers, 'node')
+
+        expect(nodersUsernames[0]).toBe('ajolonauta1')
     })
 })
