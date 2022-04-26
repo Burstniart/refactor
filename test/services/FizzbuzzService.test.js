@@ -3,11 +3,8 @@ const FizzbuzzService = require('./../../lib/services/FizzbuzzService')
 describe('Test suit for Fizz Buzz', () => {
     test('1) Fizz on score divisible by 3', () => {
         const explorer1 = {name: "Explorer1", score: 1}
-         // {name: "Explorer1", score: 1, trick: 1} 
         FizzbuzzService.applyValidationInExplorer(explorer1)
-
         const explorer3 = {name: "Explorer3", score: 3}
-        // {name: "Explorer3", score: 3, trick: "FIZZ"}
         FizzbuzzService.applyValidationInExplorer(explorer3) 
 
         expect(explorer1.trick).toBe(1)
