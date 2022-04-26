@@ -4,6 +4,7 @@ const fs = require("fs");
 // Part 1 Read & return json file 
 const rawdata = fs.readFileSync("explorers.json");
 const explorers = JSON.parse(rawdata); // Object list
+console.log(explorers[0]);
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
