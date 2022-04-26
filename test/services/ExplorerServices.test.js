@@ -1,9 +1,11 @@
-
+const ExplorerService = require('./../../lib/services/ExplorerService')
 
 describe('Test suit for ExplorerService', () => {
-    test('Placeholder', () => {
-        const res = 1 + 2
-
-        expect(res).toBe(3)
+    test('Filter explorer objects by mission', () => {
+        // Aplicación del ExplorerService sobre la lista de explorers
+        const noders = ExplorerService.filterByMission('./explorers.json', "node");
+        // ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+        // ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+        expect(noders[0].mission).toBe('node');
     });
 })
