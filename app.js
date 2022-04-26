@@ -1,17 +1,19 @@
+// Include FS module
 const fs = require("fs");
 
-// Part 1 Read json file ===========================
+// Part 1 Read & return json file 
 const rawdata = fs.readFileSync("explorers.json");
-const explorers = JSON.parse(rawdata);
+const explorers = JSON.parse(rawdata); // Object list
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-//console.log(explorersInNode.length)
+// console.log(`${explorersInNode.length} explorers in node.`) // Returns number of matches
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-//console.log(usernamesInNode)
+// Returns array of names from explorers with mission = node
+// console.log(`Github usernames from explorers in Node: ${usernamesInNode}`)
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
@@ -30,7 +32,9 @@ const assignFizzTrick = function(explorer){
     }
 };
 
+// Callback example
 const explorersInNodeAndFizzTrick = explorersInNode.map((explorer) => assignFizzTrick(explorer));
+// console.log(explorersInNodeAndFizzTrick);
 
 // Part 6: Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score
 //
