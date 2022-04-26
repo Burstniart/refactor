@@ -14,6 +14,6 @@ describe('Test suit for ExplorerService', () => {
         const explorers = Reader.readJsonFile('explorers.json')
         const noders = ExplorerService.getAmountOfExplorersByMission(explorers, 'node')
 
-        expect(noders).toBe('10 explorers in node mission.')
+        expect(noders).toBe(10)
     })
 })
