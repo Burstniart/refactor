@@ -18,6 +18,6 @@ describe('Test suit for ExplorerService', () => {
         const explorers = Reader.readJsonFile('explorers.json')
         const nodersUsernames = ExplorerService.getExplorersUsernamesByMission(explorers, 'node')
 
-        expect(nodersUsernames[0]).toBe('ajolonauta2')
+        expect(nodersUsernames[0]).toBe('ajolonauta1')
     })
 })
