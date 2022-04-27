@@ -1,4 +1,4 @@
-const FizzbuzzService = require('./../../lib/services/FizzbuzzService')
+const FizzbuzzService = require('../../lib/services/FizzbuzzService')
 
 describe('Test suit for Fizz Buzz', () => {
     test('1) Fizz on score divisible by 3', () => {
