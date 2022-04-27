@@ -1,4 +1,4 @@
-const Reader = require('./lib/utils/Reader')
+const Reader = require('./lib/utils/Reader.js')
 
 describe('Reader class tester', () => {
     test('1) Checking for correct Json read', () => {
