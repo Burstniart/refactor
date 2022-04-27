@@ -1,4 +1,4 @@
-const ExplorerService = require('./../../lib/services/ExplorerService')
+const ExplorerService = require('./../../lib/services/ExplorerServices')
 const Reader = require('./../../lib/utils/Reader')
 
 describe('Test suit for ExplorerService', () => {
