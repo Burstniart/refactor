@@ -1,3 +1,4 @@
+const { getExplorersUsernamesByMission } = require("../../lib/services/ExplorerService");
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
 
 describe('Test suit for ExplorerController', () => {
@@ -6,4 +7,9 @@ describe('Test suit for ExplorerController', () => {
         console.log(explorersInNode[0]);
         expect(explorersInNode[0].mission).toBe("node")
     });
+    test("2) Test for getExplorersAmountByMission method", () => {
+        const explorersInNode = ExplorerController.getExplorersUsernamesByMission("node")
+        console.log(explorersInNode);
+        expect(explorersInNode[0]).toBe("ajolonauta1")
+    })
 })
