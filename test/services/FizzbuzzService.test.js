@@ -9,8 +9,6 @@ describe('Test suit for Fizz Buzz', () => {
 
         expect(explorer1.trick).toBe(1)
         expect(explorer3.trick).toBe('FIZZ')
-
-        
     })
     test('2) Buzz on score divisible by 5', () => {
         const explorer1 = {name: "Explorer1", score: 1}
