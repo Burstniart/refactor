@@ -14,4 +14,15 @@ describe("Test suit for ExplorerController", () => {
         console.log(explorersInNode);
         expect(explorersInNode).toBe(10);
     });
+    test("4) Test for FizzBuzz service in explorer controller", () => {
+        const explorer1 = ExplorerController.getTrickByScore(1);
+        const explorer3 = ExplorerController.getTrickByScore(3);
+        const explorer5 = ExplorerController.getTrickByScore(5);
+        const explorer15 = ExplorerController.getTrickByScore(15);
+
+        expect(explorer1).toBe(1);
+        expect(explorer3).toBe("FIZZ");
+        expect(explorer5).toBe("BUZZ");
+        expect(explorer15).toBe("FIZZBUZZ");
+    });
 });
