@@ -25,4 +25,15 @@ describe("Test suit for Fizz Buzz", () => {
         
         expect(explorer15.trick).toBe("FIZZBUZZ");
     });
+    test("4) FizzBuzz by number", () => {
+        const explorer1 = FizzbuzzService.applyValidationInNumber(1);
+        const explorer3 = FizzbuzzService.applyValidationInNumber(3);
+        const explorer5 = FizzbuzzService.applyValidationInNumber(5);
+        const explorer15 = FizzbuzzService.applyValidationInNumber(15);
+
+        expect(explorer1).toBe(1);
+        expect(explorer3).toBe("FIZZ");
+        expect(explorer5).toBe("BUZZ");
+        expect(explorer15).toBe("FIZZBUZZ");
+    });
 });
