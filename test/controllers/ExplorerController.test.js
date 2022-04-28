@@ -25,4 +25,11 @@ describe("Test suit for ExplorerController", () => {
         expect(explorer5).toBe("BUZZ");
         expect(explorer15).toBe("FIZZBUZZ");
     });
+    test("5) Test for getExplorersByStack method in explorer controller", () => {
+        const elixsers = ExplorerController.getExplorersByStack("elixir");
+        const jsers = ExplorerController.getExplorersByStack("javascript");
+
+        expect(jsers[0]).toBe("Woopa1");
+        expect(elixsers[0]).toBe("Woopa3");
+    });
 });
