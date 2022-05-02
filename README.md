@@ -9,3 +9,5 @@ A server file is added to the lib directory to create a server with express and 
 
 ## Update on the project
 This project is now set to be deployed as a Telegram bot using the API in it.
+
+- Add dotenv module to keep token secure
