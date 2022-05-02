@@ -6,3 +6,6 @@ The working files are separated inside the services and utils directories, each 
 After the classes are created they are imported to a controller class inside the controllers directory, which also has it's respective tests file.
 ### The API
 A server file is added to the lib directory to create a server with express and implement the metods that where imported to the controller.
+
+## Update on the project
+This project is now set to be deployed as a Telegram bot using the API in it.
